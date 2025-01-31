@@ -1,8 +1,8 @@
 FROM mysql
 ENV MYSQL_ROOT_PASSWORD=expense@123 
-// MYSQL_DATABASE = transaction \
-// MYSQL_USER = mysql \
-// MYSQL_PASSWORD = mypassword
+# MYSQL_DATABASE = transaction \
+# MYSQL_USER = mysql \
+# MYSQL_PASSWORD = mypassword
 
 ADD scripts/*.sql /docker-entrypoint-initdb.d
 
